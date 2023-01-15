@@ -12,6 +12,10 @@
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+function evenOrOdd(number) {
+  return (number % 2 === 0 ? 'Even' : 'Odd')
+}
+
+console.log(evenOrOdd(2)) // Output: Even
+console.log(evenOrOdd(3)) // Output: Odd
 ```
