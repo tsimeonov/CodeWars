@@ -7,6 +7,7 @@
 | JavaScript    | 8 kyu         | [Vowel remover](#problem3)||
 | JavaScript    | 8 kyu         | [Quarter of the year](#problem4)||
 | JavaScript    | 8 kyu         | [The 'if' function](#problem5)||
+| JavaScript    | 8 kyu         | [Price of Mangoes](#problem6)||
 
 ---
 
