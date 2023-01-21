@@ -6,6 +6,7 @@
 | JavaScript    | 8 kyu         | [Add Length](#problem2)|
 | JavaScript    | 8 kyu         | [Vowel remover](#problem3)||
 | JavaScript    | 8 kyu         | [Quarter of the year](#problem4)||
+| JavaScript    | 8 kyu         | [The 'if' function](#problem5)||
 
 ---
 
@@ -108,4 +109,21 @@ function quarterOf(month) {
         console.log(quarterOf(3)); // Output 1
         console.log(quarterOf(8)); // Output 3
         console.log(quarterOf(11)); // Output 4
+```
+---
+
+### Problem #5 The 'if' function<a name="problem5"></a>
+
+Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
+
+When bool is truthy, func1 should be called, otherwise call the func2.
+
+```javascript
+function _if(bool, func1, func2) {
+  if (bool) {
+    return func1()
+  } else {
+    func2()
+  }
+}
 ```
