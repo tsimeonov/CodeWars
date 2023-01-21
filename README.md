@@ -9,7 +9,7 @@
 
 ---
 
-### 8 kyu Even or Odd<a name="problem1"></a>
+### Problem #1 Even or Odd<a name="problem1"></a>
 
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
@@ -23,7 +23,7 @@ console.log(evenOrOdd(3)) // Output: Odd
 ```
 ---
 
-### 8 kyu Add Length<a name="problem2"></a>
+### Problem #2 Add Length<a name="problem2"></a>
 
 What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
 
@@ -45,7 +45,7 @@ console.log(addLength('you will win')) // Output: ["you 3", "will 4", "win 3"]
 ```
 ---
 
-### 8 kyu Vowel Remover<a name="problem3"></a>
+### Problem #3 Vowel Remover<a name="problem3"></a>
 
 Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
 
@@ -68,7 +68,7 @@ console.log(shortcut('how are you today?')); // Output: hw r y tdy?
 ```
 ---
 
-### 8 kyu Quarter of the year<a name="problem4"></a>
+### Problem #4 Quarter of the year<a name="problem4"></a>
 
 Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
 
