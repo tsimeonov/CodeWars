@@ -9,6 +9,7 @@
 | JavaScript    | 8 kyu         | [The 'if' function](#problem5)||
 | JavaScript    | 8 kyu         | [Price of Mangoes](#problem6)||
 | JavaScript    | 8 kyu         | [Powers of 2](#problem7)||
+| JavaScript    | 8 kyu         | [Collatz Conjecture (3n+1)](#problem8)||
 
 ---
 
@@ -183,3 +184,52 @@ function powersOfTwo(n) {
  console.log(powersOfTwo(4)); // Output [1, 2,4,8,16]
 ```
 
+---
+
+### Problem #8 Collatz Conjecture (3n+1<a name="problem8"></a>
+
+The Collatz conjecture (also known as 3n+1 conjecture) is a conjecture that applying the following algorithm to any number we will always eventually reach one:
+
+#Task
+
+Your task is to make a function hotpo that takes a positive n as input and returns the number of times you need to perform this algorithm to get n = 1.
+
+#Examples
+
+```javascript
+hotpo(1) returns 0
+(1 is already 1)
+
+hotpo(5) returns 5
+5 -> 16 -> 8 -> 4 -> 2 -> 1
+
+hotpo(6) returns 8
+6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+
+hotpo(23) returns 15
+23 -> 70 -> 35 -> 106 -> 53 -> 160 -> 80 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+```
+
+```javascript
+function hotpo(n) {
+ if (n <= 0) {
+ throw new Error('Only positive numbers are allowed')
+}
+
+ let counter = 0;
+
+ while (n > 1) {
+  if (n % 2 === 0) {
+   n = n / 2
+  } else {
+   n = (3 * n) + 1
+  }
+   counter += 1
+  }
+   return counter
+  }
+
+console.log(hotpo(1)); // Output 0
+console.log(hotpo(5)); // Output 5
+console.log(hotpo(6)); // Output 8
+```
