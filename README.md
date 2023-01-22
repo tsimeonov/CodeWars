@@ -8,6 +8,7 @@
 | JavaScript    | 8 kyu         | [Quarter of the year](#problem4)||
 | JavaScript    | 8 kyu         | [The 'if' function](#problem5)||
 | JavaScript    | 8 kyu         | [Price of Mangoes](#problem6)||
+| JavaScript    | 8 kyu         | [Powers of 2](#problem7)||
 
 ---
 
@@ -152,5 +153,33 @@ function mango(quantity, price) {
 
 console.log(mango(3, 3)); // 6 (1 mango for free)
 console.log(mango(9, 5)); // 30 (3 mangos for free)
+```
+
+---
+
+### Problem #7 Powers of 2<a name="problem7"></a>
+
+Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+
+Examples
+
+```javascript
+n = 0  ==> [1]        # [2^0]
+n = 1  ==> [1, 2]     # [2^0, 2^1]
+n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+```
+
+```javascript
+function powersOfTwo(n) {
+ let arr = []
+ for (let i = 0; i <= n; i++) {
+ arr[i] = 2 ** i
+}
+ return arr
+}
+
+ console.log(powersOfTwo(0)); // Output [1]
+ console.log(powersOfTwo(1)); // Output [1,2]
+ console.log(powersOfTwo(4)); // Output [1, 2,4,8,16]
 ```
 
