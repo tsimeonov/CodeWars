@@ -10,6 +10,7 @@
 | JavaScript    | 8 kyu         | [Price of Mangoes](#problem6)||
 | JavaScript    | 8 kyu         | [Powers of 2](#problem7)||
 | JavaScript    | 8 kyu         | [Collatz Conjecture (3n+1)](#problem8)||
+| JavaScript    | 8 kyu         | [Cat years, Dog years](#problem9)||
 
 ---
 
@@ -186,7 +187,7 @@ function powersOfTwo(n) {
 
 ---
 
-### Problem #8 Collatz Conjecture (3n+1<a name="problem8"></a>
+### Problem #8 Collatz Conjecture (3n+1)<a name="problem8"></a>
 
 The Collatz conjecture (also known as 3n+1 conjecture) is a conjecture that applying the following algorithm to any number we will always eventually reach one:
 
@@ -233,3 +234,35 @@ console.log(hotpo(1)); // Output 0
 console.log(hotpo(5)); // Output 5
 console.log(hotpo(6)); // Output 8
 ```
+---
+
+### Problem #9 Cat years, Dog years<a name="problem9"></a>
+
+Return their respective ages now as *__[humanYears,catYears,dogYears]__*
+
+NOTES:
+- humanYears >= 1
+- humanYears are whole numbers only
+
+__Cat Years__
+- 15 cat years for first year
+- +9 cat years for second year
+- +4 cat years for each year after that
+
+__Dog Years__
+- 15 dog years for first year
+- +9 dog years for second year
+- +5 dog years for each year after that
+
+```javascript
+function humanYearsCatYearsDogYears(humanYears) {
+  if (humanYears === 1) return [1, 15, 15]
+  else if (humanYears === 2) return [2, 24, 24]
+  else return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5]
+}
+
+console.log(humanYearsCatYearsDogYears(1)) // Output [1,15,15]
+console.log(humanYearsCatYearsDogYears(2)) // Output [2, 24,24]
+console.log(humanYearsCatYearsDogYears(10)) // Output [10,56,64]
+```
+---
