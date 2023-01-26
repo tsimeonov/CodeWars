@@ -11,6 +11,7 @@
 | JavaScript    | 8 kyu         | [Powers of 2](#problem7)||
 | JavaScript    | 8 kyu         | [Collatz Conjecture (3n+1)](#problem8)||
 | JavaScript    | 8 kyu         | [Cat years, Dog years](#problem9)||
+| JavaScript    | 8 kyu         | [Count the number of cubes with paint](#problem10)||
 
 ---
 
@@ -265,4 +266,28 @@ console.log(humanYearsCatYearsDogYears(1)) // Output [1,15,15]
 console.log(humanYearsCatYearsDogYears(2)) // Output [2, 24,24]
 console.log(humanYearsCatYearsDogYears(10)) // Output [10,56,64]
 ```
+---
+
+### Problem #10 Count the number of cubes with paint<a name="problem10"></a>
+
+Upon arriving at an interview, you are presented with a solid blue cube. The cube is then dipped in red paint, coating the entire surface of the cube. The interviewer then proceeds to cut through the cube in all three dimensions a certain number of times.
+
+Your function takes as parameter the number of times the cube has been cut. You must return the number of smaller cubes created by the cuts that have at least one red face.
+
+```javascript
+Examples:
+countSquares(2) --> 26
+countSquares(4) --> 98
+```
+
+```javascript
+function countSquares(cuts) {
+ return (cuts + 1) ** 3 - (cuts - 1) ** 3
+}
+
+console.log(countSquares(2)) // Output 26
+console.log(countSquares(4)) // Output 98
+console.log(countSquares(5)) // Output 152
+```
+
 ---
