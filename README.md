@@ -282,7 +282,13 @@ countSquares(4) --> 98
 
 ```javascript
 function countSquares(cuts) {
- return (cuts + 1) ** 3 - (cuts - 1) ** 3
+  if (cuts === 0) {
+    return 1
+  } else if (cuts === 1) {
+      return 8
+  } else {
+      return (cuts + 1) ** 3 - (cuts - 1) ** 3
+  }
 }
 
 console.log(countSquares(2)) // Output 26
