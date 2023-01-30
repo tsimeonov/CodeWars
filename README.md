@@ -12,6 +12,7 @@
 | JavaScript    | 8 kyu         | [Collatz Conjecture (3n+1)](#problem8)||
 | JavaScript    | 8 kyu         | [Cat years, Dog years](#problem9)||
 | JavaScript    | 8 kyu         | [Count the number of cubes with paint](#problem10)||
+| JavaScript    | 8 kyu         | [Get the main of an array](#problem11)||
 
 ---
 
@@ -296,4 +297,24 @@ console.log(countSquares(4)) // Output 98
 console.log(countSquares(5)) // Output 152
 ```
 
+---
+
+### Problem #11 Get the mean of an array<a name="problem11"></a>
+
+It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+
+Return the average of the given array rounded down to its nearest integer.
+
+The array will never be empty.
+
+```javascript
+function getAverage(marks){
+  const sum = marks.reduce((a, b) => a + b, 0)
+  const avg = Math.floor((sum / marks.length))
+  return avg
+}
+
+console.log(getAverage([2, 2, 2, 2])) // Output: 2
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])) // Output 1
+```
 ---
