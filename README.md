@@ -13,6 +13,7 @@
 | JavaScript    | 8 kyu         | [Cat years, Dog years](#problem9)||
 | JavaScript    | 8 kyu         | [Count the number of cubes with paint](#problem10)||
 | JavaScript    | 8 kyu         | [Get the main of an array](#problem11)||
+| JavaScript    | 8 kyu         | [Abbreviate a Two Word Name](#problem12)||
 
 ---
 
@@ -317,4 +318,30 @@ function getAverage(marks){
 console.log(getAverage([2, 2, 2, 2])) // Output: 2
 console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])) // Output 1
 ```
+---
+
+### Problem #12 Abbreviate a Two Word Name<a name="problem12"></a>
+
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot separating them.
+
+It should look like this:
+
+```javascript
+Sam Harris => S.H
+patrick feeney => P.F
+```
+
+```javascript
+function abbrevName(name){
+  let fName = name.split(' ')[0].slice(0, 1).toUpperCase()
+  let lName = name.split(' ')[1].slice(0, 1).toUpperCase()
+  return `${fName}.${lName}`
+  
+  console.log(abbrevName('Sam Gariws')) // Output S.G
+  console.log(abbrevName('evan Poe'))   // Output E.P
+}
+```
+
 ---
