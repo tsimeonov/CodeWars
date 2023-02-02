@@ -14,6 +14,7 @@
 | JavaScript    | 8 kyu         | [Count the number of cubes with paint](#problem10)||
 | JavaScript    | 8 kyu         | [Get the main of an array](#problem11)||
 | JavaScript    | 8 kyu         | [Abbreviate a Two Word Name](#problem12)||
+| JavaScript    | 8 kyu         | [Is there a vowel in there?](#problem13)||
 
 ---
 
@@ -342,6 +343,42 @@ function abbrevName(name){
   console.log(abbrevName('Sam Gariws')) // Output S.G
   console.log(abbrevName('evan Poe'))   // Output E.P
 }
+```
+
+---
+
+### Problem #13 Is there a vowel in there?<a name="problem13"></a>
+
+Given an array of numbers, check if any of the numbers are the character codes for lower case vowels (a, e, i, o, u).
+
+If they are, change the array value to a string of that vowel.
+
+Return the resulting array.
+
+Example 1
+
+```javascript
+function isVow(a) {
+  let map = {
+    97: 'a',
+    101: 'e',
+    105: 'i',
+    111: 'o',
+    117: 'u'
+   }
+   return a.map(num => map[num] ? map[num] : num)
+}
+  console.log(isVow([118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113, 120, 106]))
+```
+
+Example 2
+
+```javascript
+function isVow(a) {
+  return a.map(x => /[aeiou]/.test(String.fromCharCode(x)) ? String.fromCharCode(x) : x)
+}
+
+console.log(isVow([118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113, 120, 106]))
 ```
 
 ---
