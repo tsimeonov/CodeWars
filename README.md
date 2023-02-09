@@ -16,6 +16,7 @@
 | JavaScript    | 8 kyu         | [Abbreviate a Two Word Name](#problem12)||
 | JavaScript    | 8 kyu         | [Is there a vowel in there?](#problem13)||
 | JavaScript    | 8 kyu         | [Gravity Flip](#problem14)||
+| JavaScript    | 8 kyu         | [Find nearest square number](#problem15)||
 
 ---
 
@@ -402,3 +403,28 @@ const flip=(d, a)=>{
   return d === 'R' ? a.sort((a,b) => a - b) : a.sort((a,b) => b - a)
 }
 ```
+---
+
+### Problem #15 Find Nearest Square numer<a name="problem15"></a>
+
+```javascript
+function nearestSq(n){
+  let root = Math.sqrt(n)
+  let lowerRoot  = Math.floor(root)
+  let lower = lowerRoot * lowerRoot
+  let higher = (lowerRoot + 1) * (lowerRoot + 1)
+  return (n - lower) <= (higher -n ) ? lower : higher
+}
+```
+
+Example: 
+
+```javascript
+nearestSq(111);
+```
+
+1. Math.sqrt(111) returns 10.539230484541326.
+2. Math.floor(10.539230484541326) returns 10.
+3. lowerRoot * lowerRoot returns 100.
+4. (lowerRoot + 1) * (lowerRoot + 1) returns 121.
+5. (n - lower) <= (higher - n) returns true, so lower is returned, which is 100.
