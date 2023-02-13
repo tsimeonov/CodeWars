@@ -17,6 +17,7 @@
 | JavaScript    | 8 kyu         | [Is there a vowel in there?](#problem13)||
 | JavaScript    | 8 kyu         | [Gravity Flip](#problem14)||
 | JavaScript    | 8 kyu         | [Find nearest square number](#problem15)||
+| JavaScript    | 8 kyu         | [Count of positives / sum of negatives](#problem16)||
 
 ---
 
@@ -428,3 +429,41 @@ nearestSq(111);
 3. lowerRoot * lowerRoot returns 100.
 4. (lowerRoot + 1) * (lowerRoot + 1) returns 121.
 5. (n - lower) <= (higher - n) returns true, so lower is returned, which is 100.
+
+--- 
+
+### Problem #16 Count of positives / sum of negatives<a name="problem16"></a>
+
+Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+Example
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+
+```javascript
+function countPositivesSumNegatives(input) {
+  let countPositives = 0;
+  let sumNegatives = 0;
+  if (input === null || input.length === 0) {
+    return [];
+  }
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] > 0) {
+      countPositives++;
+    } else if (input[i] < 0) {
+      sumNegatives += input[i];
+    }
+  }
+  return [countPositives, sumNegatives];
+}
+```
+Output
+
+```javascript
+countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
+// returns [10, -65]
+
+```
