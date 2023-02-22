@@ -8,21 +8,21 @@
 
 ---
 
-### Number #1 What are the possible ways to create objects in JS<a name="nr"></a>
+### Number #1 What are the possible ways to create objects in JS<a name="nr1"></a>
 
 In JS, there are several ways to create objects: 
 
 1. Object Literal Notation
 
 <details>
-  <summary>Click to expand code example</summary>
-  
+  <summary>Explanation/summary>
+  You can create an object using object literal notaion by definig its properties and values in curly braces
   ```javascript
-  function add(a, b) {
-    return a + b;
-  }
-  
-  console.log(add(2, 3)); // Output: 5
+const person = {
+  name: 'John',
+  age: 30,
+  gender: 'Male'
+};
 </details>
 ```
 
