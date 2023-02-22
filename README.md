@@ -15,14 +15,14 @@ In JS, there are several ways to create objects:
 1. Object Literal Notation
 
 <details>
-<summary>Explanation</summary>
-You can create an object using object literal notation by defining its properties and values in curly breaces
-```javascript
-const person = {
-  name: 'John',
-  age: 30,
-  gender: 'Male'
-};
-```
+  <summary>Click to expand code example</summary>
+  
+  ```javascript
+  function add(a, b) {
+    return a + b;
+  }
+  
+  console.log(add(2, 3)); // Output: 5
 </details>
+```
 
