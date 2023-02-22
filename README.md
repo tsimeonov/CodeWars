@@ -15,6 +15,7 @@ In JS, there are several ways to create objects:
 1. Object Literal Notation
 <details>
   <summary>Explanation</summary>
+  <br>
   
 ```javascript
 const person = {
