@@ -29,7 +29,6 @@ In JS, there are several ways to create objects:
 
 <details open>
 <summary>Explanation</summary>
-<br>
 You can create an object using object literal notation by defining its properties and values in curly breaces:
 ```javascript
 const person = {
