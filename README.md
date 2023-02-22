@@ -16,7 +16,8 @@ In JS, there are several ways to create objects:
 
 <details>
   <summary>Explanation</summary>
-  ```javascript
+  
+```javascript
 const person = {
   name: 'John',
   age: 30,
