@@ -27,7 +27,7 @@ In JS, there are several ways to create objects:
 
 1. Object Literal Notation
 
-<details>
+<details open>
 <summary>Explanation</summary>
 <br>
 You can create an object using object literal notation by defining its properties and values in curly breaces:
@@ -37,7 +37,6 @@ const person = {
   age: 30,
   gender: 'Male'
 };
-
 ```
 </details>
 
