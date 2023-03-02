@@ -2,17 +2,14 @@
 
 | No.      | Questions    |   
 | ------------- |:-------------:| 
-| 01    |[What are the possible ways to create objects in JS](#nr1)|
-| 02    |[What are the possible ways to create objects in JS](#2-problem)|
+| 01    |[What are the possible ways to create objects in JS](#1-problem)|
 | 03    | [Vowel remover](#problem3)||
 
 ---
 
 
 
-### 2. Problem
-
-[What are the possible ways to create objects in JS](#nr1)
+### 1. Problem
   
 <details>
   <summary> Refreshers </summary>
