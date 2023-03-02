@@ -8,39 +8,29 @@
 
 ---
 
-### Number #1 What are the possible ways to create objects in JS<a name="nr1"></a>
-
-In JS, there are several ways to create objects: 
-
-1. Object Literal Notation
-<details>
-  <summary>Explanation</summary>
-  You can create an object using object literal notaion by definig its properties and values in curly braces
-  <br>
+Question 1 
   
-```javascript
-const person = {
-  name: 'John',
-  age: 30,
-  gender: 'Male'
-};
-</details>
-```
-
-2. Constructor Functions
 <details>
-  <summary>Explanation</summary>
-  You can create an object using constructor functions in JS. Constructor functions are used to create multiple instances of an object withe the same properties amd methods. To create an object using constructor functions, use the 'new' keyword to instantiate an object.
-  <br>
+  <summary> Refreshers </summary>
   
-```javascript
-function Person (name, age, city) {
-  this.name = name;
-  this.age = age;
-  this.city = city;
-}
+   ```javascript
+      // Your JavaScript code here
+      const sum = (a, b) => {
+      return a + b;
+    }
 
-const person = new Person('John', 30, 'New York')
+       console.log(sum(2, 3)); // Output: 5
+   ```
 </details>
-```
+  
+<details>
+ <summary> Semester 1 </summary>
+ <ul>
+   <li> Data Visualization </li>
+   <li> Ethics </li>
+ </ul>
+</details>
+ 
+
+
 
