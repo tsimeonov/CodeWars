@@ -107,5 +107,24 @@
 ```
 </details>
 
+<details>
+  <summary>Bind</summary>
+  Returns a new functon, allowing you to pass any number of arguments.
+  
+```javascript
+  let employee1 = {firstName: 'John', lastName: 'Rodson'};
+  let employee2 = {firstName: 'Jimmy', lastName: 'Baily'};
+  
+  function invite(greeting1, greeting2) {
+    console.log(`${greeting1} ${this.firstNae} ${this.lastName}`)
+  }
+  
+  let inviteEmployee1 = invite.bind(employee1)
+  let inviteEmployee2 = invite.bind(employee2)
+  invite.apply(employee1, 'Hello', 'How are you'); // Hello John Rodson, How are you?
+  invite.apply(employee2, 'Hello', 'How are you'); // Hello jimmy Baily, How are you?
+```
+</details>
+
 
 
