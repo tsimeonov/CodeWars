@@ -127,5 +127,6 @@
 </details>
 
 Call and Apply are pretty interchangeable. Both execute the current function immediately. You can remember by treating Call is for comma (separated list) and Apply is for Arry.
+<br>
 Whereas Bind creates a new function that will have **_this_** set tot the first parameter passed to bind().
 
