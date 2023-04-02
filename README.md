@@ -449,7 +449,7 @@ countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -
 
 ---
 
-### Problem #17 Contamination #1-String"problem17"></a>
+### Problem #17 Contamination #1-String<a name="problem17"></a>
 
 An AI has infected a text with a character!!
 
