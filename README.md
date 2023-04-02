@@ -470,7 +470,7 @@ text after  = "zzz"
 Explanation 
 
 
-This function takes two parameters: __**text**__ and __**char**__. If either of them is empty, the function returns an empty string. Otherwise, it initializes an empty string called result, and loops over each character in the text string, appending the char character to the result string each time. Finally, the function returns the result string.
+This function takes two parameters: _text_ and _char_. If either of them is empty, the function returns an empty string. Otherwise, it initializes an empty string called result, and loops over each character in the text string, appending the char character to the result string each time. Finally, the function returns the result string.
 
 
 ```javascript
