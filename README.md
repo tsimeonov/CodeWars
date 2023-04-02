@@ -469,9 +469,9 @@ text after  = "zzz"
 
 Explanation 
 
-```javascript
-This function takes two parameters: text and char. If either of them is empty, the function returns an empty string. Otherwise, it initializes an empty string called result, and loops over each character in the text string, appending the char character to the result string each time. Finally, the function returns the result string.
-```
+
+This function takes two parameters: **text**__ and **char**__. If either of them is empty, the function returns an empty string. Otherwise, it initializes an empty string called result, and loops over each character in the text string, appending the char character to the result string each time. Finally, the function returns the result string.
+
 
 ```javascript
 function contamination(text, char){
