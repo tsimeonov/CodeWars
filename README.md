@@ -18,6 +18,7 @@
 | JavaScript    | 8 kyu         | [Gravity Flip](#problem14)||
 | JavaScript    | 8 kyu         | [Find nearest square number](#problem15)||
 | JavaScript    | 8 kyu         | [Count of positives / sum of negatives](#problem16)||
+| JavaScript    | 8 kyu         | [Contamination #1-String](#problem17)||
 
 ---
 
@@ -444,6 +445,49 @@ Output
 ```javascript
 countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]);
 // returns [10, -65]
+```
+
+---
+
+### Problem #17 Contamination #1-String"problem17"></a>
+
+An AI has infected a text with a character!!
+
+This text is now fully mutated to this character.
+
+If the text or the character are empty, return an empty string.
+There will never be a case when both are empty as nothing is going on!!
+
+Note: The character is a string of length 1 or an empty string.
+
+Example
+```javascript
+text before = "abc"
+character   = "z"
+text after  = "zzz"
+```
+
+```javascript
+function contamination(text, char){
+  if (!text || !char) {
+    return ""
+  }
+  
+  let result = ""
+  for (let i = 0; i < text.length; i++) {
+    result += char
+  }
+  
+  return result
+}
+```
+
+Output
+
+```javascript
+console.log(contamination("abc","z")) // Output: "zzz"
+console.log(contamination("","z")) // Output: ""
+console.log(contamination("abc","")) // Output: ""
 ```
 
 ---
