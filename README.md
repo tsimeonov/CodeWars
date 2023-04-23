@@ -21,12 +21,11 @@
 | JavaScript    | 8 kyu         | [Contamination #1-String](#problem17)||
 
 ---
-### Problem #1 Even or Odd<a name="problem1"></a>
+### Problem #1  Even or Odd<a name="problem1"></a>
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 <details>
-  <summary>Solution<a name="problem1"></a></summary>
+  <summary>Solution</summary>
   
-  ### Some Code
   ```javascript
 function evenOrOdd(number) {
   return (number % 2 === 0 ? 'Even' : 'Odd')
@@ -50,6 +49,9 @@ Example(Input --> Output)
 ```
 Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function addLength(str) {
   return str.split(' ').map(word => `${word} ${word.length}`)
@@ -57,6 +59,7 @@ function addLength(str) {
 console.log(addLength('apple ban')) // Output: ["apple 5", "ban 3"]
 console.log(addLength('you will win')) // Output: ["you 3", "will 4", "win 3"]
 ```
+</details>
 ---
 
 ### Problem #3 Vowel Remover<a name="problem3"></a>
