@@ -1,24 +1,24 @@
 # Table of Content
 
- Language      | Difficulty    | Problem Name  |
-| ------------- |:-------------:| -----:|
-| JavaScript    | 8 kyu         | [Even or Odd](#problem1)|
-| JavaScript    | 8 kyu         | [Add Length](#problem2)|
-| JavaScript    | 8 kyu         | [Vowel remover](#problem3)||
-| JavaScript    | 8 kyu         | [Quarter of the year](#problem4)||
-| JavaScript    | 8 kyu         | [The 'if' function](#problem5)||
-| JavaScript    | 8 kyu         | [Price of Mangoes](#problem6)||
-| JavaScript    | 8 kyu         | [Powers of 2](#problem7)||
-| JavaScript    | 8 kyu         | [Collatz Conjecture (3n+1)](#problem8)||
-| JavaScript    | 8 kyu         | [Cat years, Dog years](#problem9)||
-| JavaScript    | 8 kyu         | [Count the number of cubes with paint](#problem10)||
-| JavaScript    | 8 kyu         | [Get the main of an array](#problem11)||
-| JavaScript    | 8 kyu         | [Abbreviate a Two Word Name](#problem12)||
-| JavaScript    | 8 kyu         | [Is there a vowel in there?](#problem13)||
-| JavaScript    | 8 kyu         | [Gravity Flip](#problem14)||
-| JavaScript    | 8 kyu         | [Find nearest square number](#problem15)||
-| JavaScript    | 8 kyu         | [Count of positives / sum of negatives](#problem16)||
-| JavaScript    | 8 kyu         | [Contamination #1-String](#problem17)||
+ Language      | Difficulty    | Problem #| Problem Name  |
+| ------------- |:-------------:| -----:|-----:|
+| JavaScript    | 8 kyu         |    1  | [Even or Odd](#problem1)|
+| JavaScript    | 8 kyu         |    2  |[Add Length](#problem2)|
+| JavaScript    | 8 kyu         |    3  | [Vowel remover](#problem3)||
+| JavaScript    | 8 kyu         |    4  |[Quarter of the year](#problem4)||
+| JavaScript    | 8 kyu         |    5  |[The 'if' function](#problem5)||
+| JavaScript    | 8 kyu         |    6  |[Price of Mangoes](#problem6)||
+| JavaScript    | 8 kyu         |    7  |[Powers of 2](#problem7)||
+| JavaScript    | 8 kyu         |    8  |[Collatz Conjecture (3n+1)](#problem8)||
+| JavaScript    | 8 kyu         |    9  |[Cat years, Dog years](#problem9)||
+| JavaScript    | 8 kyu         |   10  |[Count the number of cubes with paint](#problem10)||
+| JavaScript    | 8 kyu         |   11  |[Get the main of an array](#problem11)||
+| JavaScript    | 8 kyu         |   12  |[Abbreviate a Two Word Name](#problem12)||
+| JavaScript    | 8 kyu         |   13  |[Is there a vowel in there?](#problem13)||
+| JavaScript    | 8 kyu         |   14  |[Gravity Flip](#problem14)||
+| JavaScript    | 8 kyu         |   15  |[Find nearest square number](#problem15)||
+| JavaScript    | 8 kyu         |   16  |[Count of positives / sum of negatives](#problem16)||
+| JavaScript    | 8 kyu         |   17  |[Contamination #1-String](#problem17)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
@@ -36,7 +36,6 @@ console.log(evenOrOdd(3)) // Output: Odd
 </details>
 
 ---
-
 ### Problem #2 Add Length<a name="problem2"></a>
 
 What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
@@ -60,8 +59,8 @@ console.log(addLength('apple ban')) // Output: ["apple 5", "ban 3"]
 console.log(addLength('you will win')) // Output: ["you 3", "will 4", "win 3"]
 ```
 </details>
----
 
+---
 ### Problem #3 Vowel Remover<a name="problem3"></a>
 
 Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
@@ -87,7 +86,6 @@ function shortcut (string) {
 </details>
 
 ---
-
 ### Problem #4 Quarter of the year<a name="problem4"></a>
 
 Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
@@ -131,15 +129,18 @@ function quarterOf(month) {
         console.log(quarterOf(8)); // Output 3
         console.log(quarterOf(11)); // Output 4
 ```
+</details>
 
 ---
-
 ### Problem #5 The 'if' function<a name="problem5"></a>
 
 Create a function called *___if__* which takes 3 arguments: a value *__bool__* and 2 functions (which do not take any parameters): *__func1__* and *__func2__*
 
 When *__bool__* is truthy, *__func1__* should be called, otherwise call the *__func2__*.
 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function _if(bool, func1, func2) {
   if (bool) {
@@ -147,9 +148,9 @@ function _if(bool, func1, func2) {
   } else {
     func2()
 ```
+</details>
 
 ---
-
 ### Problem #6 Price of Mangoes<a name="problem6"></a>
 
 There's a *__"3 for 2"__* (or *__"2+1"__* if you like) offer on mangoes. For a given quantity and price (per mango), calculate the total cost of the mangoes.
@@ -163,6 +164,9 @@ mango(5, 3) ==> 12   # 4 mangoes for $3 per unit = $12; +1 mango for free
 mango(9, 5) ==> 30   # 6 mangoes for $5 per unit = $30; +3 mangoes for free
 ```
 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function mango(quantity, price) {
   let normalQuantity = quantity - Math.floor(quantity / 3)
@@ -171,9 +175,9 @@ function mango(quantity, price) {
 console.log(mango(3, 3)); // 6 (1 mango for free)
 console.log(mango(9, 5)); // 30 (3 mangos for free)
 ```
+</details>
 
 ---
-
 ### Problem #7 Powers of 2<a name="problem7"></a>
 
 Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
@@ -186,6 +190,9 @@ n = 1  ==> [1, 2]     # [2^0, 2^1]
 n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 ```
 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function powersOfTwo(n) {
  let arr = []
@@ -198,9 +205,9 @@ function powersOfTwo(n) {
  console.log(powersOfTwo(1)); // Output [1,2]
  console.log(powersOfTwo(4)); // Output [1, 2,4,8,16]
 ```
+</details>
 
 ---
-
 ### Problem #8 Collatz Conjecture (3n+1)<a name="problem8"></a>
 
 The Collatz conjecture (also known as 3n+1 conjecture) is a conjecture that applying the following algorithm to any number we will always eventually reach one:
@@ -221,7 +228,10 @@ hotpo(6) returns 8
 hotpo(23) returns 15
 23 -> 70 -> 35 -> 106 -> 53 -> 160 -> 80 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
 ```
-
+ 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function hotpo(n) {
  if (n <= 0) {
@@ -242,8 +252,9 @@ console.log(hotpo(1)); // Output 0
 console.log(hotpo(5)); // Output 5
 console.log(hotpo(6)); // Output 8
 ```
----
+</details>
 
+---
 ### Problem #9 Cat years, Dog years<a name="problem9"></a>
 
 Return their respective ages now as *__[humanYears,catYears,dogYears]__*
@@ -261,7 +272,10 @@ __Dog Years__
 - 15 dog years for first year
 - +9 dog years for second year
 - +5 dog years for each year after that
-
+ 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function humanYearsCatYearsDogYears(humanYears) {
   if (humanYears === 1) return [1, 15, 15]
@@ -272,8 +286,9 @@ console.log(humanYearsCatYearsDogYears(1)) // Output [1,15,15]
 console.log(humanYearsCatYearsDogYears(2)) // Output [2, 24,24]
 console.log(humanYearsCatYearsDogYears(10)) // Output [10,56,64]
 ```
----
+</details>
 
+---
 ### Problem #10 Count the number of cubes with paint<a name="problem10"></a>
 
 Upon arriving at an interview, you are presented with a solid blue cube. The cube is then dipped in red paint, coating the entire surface of the cube. The interviewer then proceeds to cut through the cube in all three dimensions a certain number of times.
@@ -284,7 +299,11 @@ Your function takes as parameter the number of times the cube has been cut. You 
 Examples:
 countSquares(2) --> 26
 countSquares(4) --> 98
-
+```
+ 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function countSquares(cuts) {
   if (cuts === 0) {
@@ -299,9 +318,9 @@ console.log(countSquares(2)) // Output 26
 console.log(countSquares(4)) // Output 98
 console.log(countSquares(5)) // Output 152
 ```
+</details>
 
 ---
-
 ## Problem #11 Get the mean of an array<a name="problem11"></a>
 
 It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
@@ -309,7 +328,10 @@ It's the academic year's end, fateful moment of your school report. The averages
 Return the average of the given array rounded down to its nearest integer.
 
 The array will never be empty.
-
+ 
+<details>
+  <summary>Solution</summary>
+ 
 ```javascript
 function getAverage(marks){
   const sum = marks.reduce((a, b) => a + b, 0)
@@ -319,8 +341,9 @@ function getAverage(marks){
 console.log(getAverage([2, 2, 2, 2])) // Output: 2
 console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])) // Output 1
 ```
----
+</details>
 
+---
 ### Problem #12 Abbreviate a Two Word Name<a name="problem12"></a>
 
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
@@ -334,6 +357,9 @@ Sam Harris => S.H
 patrick feeney => P.F
 ```
 
+<details>
+  <summary>Solution</summary>
+ 
 ```javascript
 function abbrevName(name){
   let fName = name.split(' ')[0].slice(0, 1).toUpperCase()
@@ -343,9 +369,10 @@ function abbrevName(name){
   console.log(abbrevName('Sam Gariws')) // Output S.G
   console.log(abbrevName('evan Poe'))   // Output E.P
 }
+```
+</details>
 
 ---
-
 ### Problem #13 Is there a vowel in there?<a name="problem13"></a>
 
 Given an array of numbers, check if any of the numbers are the character codes for lower case vowels (a, e, i, o, u).
@@ -369,18 +396,19 @@ function isVow(a) {
 }
   console.log(isVow([118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113, 120, 106]))
 ```
-
-Example 2
-
+ 
+<details>
+  <summary>Solution</summary>
+ 
 ```javascript
 function isVow(a) {
   return a.map(x => /[aeiou]/.test(String.fromCharCode(x)) ? String.fromCharCode(x) : x)
 }
 console.log(isVow([118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113, 120, 106]))
 ```
+</details>
 
 ---
-
 ### Problem #14 Gravity Flip<a name="problem14"></a>
 
 Bob is bored during his physics lessons so he's built himself a toy box to help pass the time. The box is special because it has the ability to change gravity.
@@ -393,40 +421,18 @@ Examples (input -> output)
 'R', [3, 2, 1, 2]      ->  [1, 2, 2, 3]
 'L', [1, 4, 5, 3, 5 ]  ->  [5, 5, 4, 3, 1]
 ```
-
+ 
+<details>
+  <summary>Solution</summary>
+ 
 ```javascript
 const flip=(d, a)=>{
   return d === 'R' ? a.sort((a,b) => a - b) : a.sort((a,b) => b - a)
 }
 ```
----
-
-### Problem #15 Find Nearest Square numer<a name="problem15"></a>
-
-```javascript
-function nearestSq(n){
-  let root = Math.sqrt(n)
-  let lowerRoot  = Math.floor(root)
-  let lower = lowerRoot * lowerRoot
-  let higher = (lowerRoot + 1) * (lowerRoot + 1)
-  return (n - lower) <= (higher -n ) ? lower : higher
-}
-```
-
-Example: 
-
-```javascript
-nearestSq(111);
-```
-
-1. Math.sqrt(111) returns 10.539230484541326.
-2. Math.floor(10.539230484541326) returns 10.
-3. lowerRoot * lowerRoot returns 100.
-4. (lowerRoot + 1) * (lowerRoot + 1) returns 121.
-5. (n - lower) <= (higher - n) returns true, so lower is returned, which is 100.
+</details>
 
 --- 
-
 ### Problem #16 Count of positives / sum of negatives<a name="problem16"></a>
 
 Given an array of integers.
@@ -438,6 +444,10 @@ If the input is an empty array or is null, return an empty array.
 Example
 For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
+ 
+<details>
+  <summary>Solution</summary>
+ 
 ```javascript
 function countPositivesSumNegatives(input) {
   let countPositives = 0;
@@ -455,6 +465,7 @@ function countPositivesSumNegatives(input) {
   return [countPositives, sumNegatives];
 }
 ```
+</details>
 
 Output
 
@@ -464,7 +475,6 @@ countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -
 ```
 
 ---
-
 ### Problem #17 Contamination #1-String<a name="problem17"></a>
 
 An AI has infected a text with a character!!
@@ -488,7 +498,10 @@ Explanation
 
 This function takes two parameters: '_text_' and '_char_'. If either of them is empty, the function returns an empty string. Otherwise, it initializes an empty string called '_result_', and loops over each character in the '_text_' string, appending the '_char_' character to the '_result_' string each time. Finally, the function returns the '_result_' string.
 
-
+ 
+<details>
+  <summary>Solution</summary>
+ 
 ```javascript
 function contamination(text, char){
   if (!text || !char) {
@@ -503,6 +516,7 @@ function contamination(text, char){
   return result
 }
 ```
+</details>
 
 Output
 
