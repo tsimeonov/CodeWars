@@ -21,36 +21,21 @@
 | JavaScript    | 8 kyu         | [Contamination #1-String](#problem17)||
 
 ---
-<details>
- efewfewfwefwefefe
-  <summary>Problem 1<a name="problem1"></a></summary>
-  
-  ### Heading
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
-
-  ### Some Code
-  ```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
-</details>
----
-
 ### Problem #1 Even or Odd<a name="problem1"></a>
-
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
-
-```javascript
+<details>
+  <summary>Solution<a name="problem1"></a></summary>
+  
+  ### Some Code
+  ```javascript
 function evenOrOdd(number) {
   return (number % 2 === 0 ? 'Even' : 'Odd')
 }
 console.log(evenOrOdd(2)) // Output: Even
 console.log(evenOrOdd(3)) // Output: Odd
-```
+  ```
+</details>
+
 ---
 
 ### Problem #2 Add Length<a name="problem2"></a>
