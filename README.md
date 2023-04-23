@@ -73,13 +73,19 @@ Examples
 "codewars"  -->  "cdwrs"
 "goodbye"   -->  "gdby"
 "HELLO"     -->  "HELLO"
+```
 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function shortcut (string) {
    const noVowels = string.replace(/[aeiou]/gi, '')
    return noVowels
 }
 ```
+</details>
+
 ---
 
 ### Problem #4 Quarter of the year<a name="problem4"></a>
@@ -88,6 +94,9 @@ Given a month as an integer from 1 to 12, return to which quarter of the year it
 
 For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
 
+<details>
+  <summary>Solution</summary>
+  
 ```javascript
 function quarterOf(month) {
             if (month === 1) {
@@ -122,6 +131,7 @@ function quarterOf(month) {
         console.log(quarterOf(8)); // Output 3
         console.log(quarterOf(11)); // Output 4
 ```
+
 ---
 
 ### Problem #5 The 'if' function<a name="problem5"></a>
