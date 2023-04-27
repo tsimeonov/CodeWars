@@ -605,7 +605,10 @@ Output:
 Return Value: 2
 ```
 
-```js
+<details>
+  <summary>Solution</summary>
+ 
+````js
 function my_levenshtein (str1, str2) {
 // If the two strings are not the same length returns -1.
 if (str1.length !== str2.length) {
@@ -625,6 +628,9 @@ for (let i =0; i< str1.length; i++) {
 return count
 }
 ```
+</details>
+
+
 	
 
 	
