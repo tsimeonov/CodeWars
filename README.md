@@ -544,27 +544,42 @@ Complete an index.html file with the missing javascript code in order to move th
   <summary>Solution</summary>
  
 ```javascript
- const box = document.getElementById("my_box_realtime");
-	const screenWidth = window.innerWidth;
-	const screenHeight = window.innerHeight;
-	let x = screenWidth - box.clientWidth - 70;
-	let y = screenHeight - box.clientHeight - 70;
-	let xDirection = 1;
-	let yDirection = 1;
+// Select the element with an id of `my_box_realtime` and assign the variable 'box'
+const box = document.getElementById("my_box_realtime");
 
-	function moveBox() {
-		if (x <= 0 || x >= screenWidth - box.clientWidth) {
-			xDirection = -xDirection;
-		}
-		if (y <= 0 || y >= screenHeight - box.clientHeight) {
-			yDirection = -yDirection;
-		}
-		x += xDirection;
-		y += yDirection;
-		box.style.right = x + "px";
-		box.style.bottom = y + "px";
-		setTimeout(moveBox, 15);
-	}
-	moveBox();
+// Get the width and height of the browser window and assign the variables `screenWidth` and `screenHeight` to them
+const screenWidth = window.innerWidth;
+const screenHeight = window.innerHeight;
+
+// The variables `x` and `y` are initialized with values that position the box at the bottom right corner od the screen withe ofsset of 70px
+let x = screenWidth - box.clientWidth - 70;
+let y = screenHeight - box.clientHeight - 70;
+
+// `xDirection` and `yDirection` are initialized to 1, which represents the direction the box will move
+let xDirection = 1;
+let yDirection = 1;
+
+// The function checks if the the box is at the edge of the screen and changes the direction of its movement accordingly
+function moveBox() {
+ if (x <= 0 || x >= screenWidth - box.clientWidth) {
+  xDirection = -xDirection;
+}
+ if (y <= 0 || y >= screenHeight - box.clientHeight) {
+ yDirection = -yDirection;
+}
+
+// The `x` and `y` coordinates of the box are updated based on their current posiotn and direction of movement
+x += xDirection;
+y += yDirection;
+
+// The `right` and `bottom` CSS properties of the box are updated to move it to the new position
+box.style.right = x + "px";
+box.style.bottom = y + "px";
+	
+// The `moveBox` function is called with a delay of 15 ms using the `setTimeout` function
+setTimeout(moveBox, 15);
+}
+
+moveBox();
 ```
 </details>
