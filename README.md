@@ -20,6 +20,7 @@
 | JavaScript    | 8 kyu         |   16  |[Count of positives / sum of negatives](#problem16)||
 | JavaScript    | 8 kyu         |   17  |[Contamination #1-String](#problem17)||
 | JavaScript    |               |   18  |[Moving box Realtime](#problem18)||
+| JavaScript    |               |   18  |[My Levenshtein](#problem19)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
@@ -583,3 +584,22 @@ setTimeout(moveBox, 15);
 moveBox();
 ```
 </details>
+	
+---
+### Problem #19 My Levenshtein<a name="problem19"></a>
+Write a function that retuns a value that represents hos similat two gicen strings are.
+	
+Example 01:	
+```js
+Input: "GGACTGA" && "GGACTGA"
+Output: 
+Return Value: 0
+```
+
+Example 02:
+```js
+Input: "ACCAGGG" && "ACTATGG"
+Output: 
+Return Value: 2
+```
+	
