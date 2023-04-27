@@ -19,6 +19,7 @@
 | JavaScript    | 8 kyu         |   15  |[Find nearest square number](#problem15)||
 | JavaScript    | 8 kyu         |   16  |[Count of positives / sum of negatives](#problem16)||
 | JavaScript    | 8 kyu         |   17  |[Contamination #1-String](#problem17)||
+| JavaScript    |               |   18  |[Moving box Realtime](#problem18)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
@@ -527,3 +528,43 @@ console.log(contamination("abc","")) // Output: ""
 ```
 
 ---
+### Problem #18 Moving Box Realtime<a name="problem18"></a>
+Complete an index.html file with the missing javascript code in order to move the "div" with the id my_box_realtime to the coordinates of bottom: 0 and right 0. Moving the box must be smooth. When we load your html page, we should see the box moving diagonally through the screen and it should take 35 seconds to reach its destination.
+
+```html
+<html>
+    <div id="my_box_realtime" style= "background-color: red; position: absolute; right: 70; bottom: 70; min-width: 100px; min-height: 100px"></div>
+    <script type="text/javascript">
+      // YOUR CODE
+    </script>
+</html>
+```
+
+<details>
+  <summary>Solution</summary>
+ 
+```javascript
+ const box = document.getElementById("my_box_realtime");
+	const screenWidth = window.innerWidth;
+	const screenHeight = window.innerHeight;
+	let x = screenWidth - box.clientWidth - 70;
+	let y = screenHeight - box.clientHeight - 70;
+	let xDirection = 1;
+	let yDirection = 1;
+
+	function moveBox() {
+		if (x <= 0 || x >= screenWidth - box.clientWidth) {
+			xDirection = -xDirection;
+		}
+		if (y <= 0 || y >= screenHeight - box.clientHeight) {
+			yDirection = -yDirection;
+		}
+		x += xDirection;
+		y += yDirection;
+		box.style.right = x + "px";
+		box.style.bottom = y + "px";
+		setTimeout(moveBox, 15);
+	}
+	moveBox();
+```
+</details>
