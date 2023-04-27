@@ -20,7 +20,7 @@
 | JavaScript    | 8 kyu         |   16  |[Count of positives / sum of negatives](#problem16)||
 | JavaScript    | 8 kyu         |   17  |[Contamination #1-String](#problem17)||
 | JavaScript    |               |   18  |[Moving box Realtime](#problem18)||
-| JavaScript    |               |   18  |[My Levenshtein](#problem19)||
+| JavaScript    |               |   19  |[My Levenshtein](#problem19)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
@@ -584,6 +584,47 @@ setTimeout(moveBox, 15);
 moveBox();
 ```
 </details>
+
+---
+### Problem #19 My Levenshtein<a name="problem19"></a>
+Write a function that retuns a value that represents hos similat two gicen strings are.
+
+Example 01:
+
+```
+Input: "GGACTGA" && "GGACTGA"
+Output: 
+Return Value: 0
+```
+
+Example 02:
+
+```
+Input: "ACCAGGG" && "ACTATGG"
+Output: 
+Return Value: 2
+```
+
+```js
+function my_levenshtein (str1, str2) {
+// If the two strings are not the same length returns -1.
+if (str1.length !== str2.length) {
+ return -1
+}
+
+// Otherwise, it initializes a count variable to 0 and iterates through each character of the two strings using a for loop. 
+// If the characters at the same position in the two strings are different, the count variable is incremented by 1
+let count = 0;
+for (let i =0; i< str1.length; i++) {
+ if (str1[i] !== str2[i]) {
+  count++
+ }
+}
+
+// returns the count variable, which represents the number of differences between the two strings.
+return count
+}
+```
 	
 
 	
