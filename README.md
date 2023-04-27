@@ -545,61 +545,26 @@ Complete an index.html file with the missing javascript code in order to move th
   <summary>Solution</summary>
  
 ```javascript
-// Select the element with an id of `my_box_realtime` and assign the variable 'box'
-const box = document.getElementById("my_box_realtime");
-
-// Get the width and height of the browser window and assign the variables `screenWidth` and `screenHeight` to them
-const screenWidth = window.innerWidth;
-const screenHeight = window.innerHeight;
-
-// The variables `x` and `y` are initialized with values that position the box at the bottom right corner od the screen withe ofsset of 70px
-let x = screenWidth - box.clientWidth - 70;
-let y = screenHeight - box.clientHeight - 70;
-
-// `xDirection` and `yDirection` are initialized to 1, which represents the direction the box will move
-let xDirection = 1;
-let yDirection = 1;
-
-// The function checks if the the box is at the edge of the screen and changes the direction of its movement accordingly
-function moveBox() {
- if (x <= 0 || x >= screenWidth - box.clientWidth) {
-  xDirection = -xDirection;
-}
- if (y <= 0 || y >= screenHeight - box.clientHeight) {
- yDirection = -yDirection;
+function my_levenshtein (str1, str2) {
+// If the two strings are not the same length returns -1.
+if (str1.length !== str2.length) {
+ return -1
 }
 
-// The `x` and `y` coordinates of the box are updated based on their current posiotn and direction of movement
-x += xDirection;
-y += yDirection;
-
-// The `right` and `bottom` CSS properties of the box are updated to move it to the new position
-box.style.right = x + "px";
-box.style.bottom = y + "px";
-	
-// The `moveBox` function is called with a delay of 15 ms using the `setTimeout` function
-setTimeout(moveBox, 15);
+// Otherwise, it initializes a count variable to 0 and iterates through each character of the two strings using a for loop. 
+// If the characters at the same position in the two strings are different, the count variable is incremented by 1
+let count = 0;
+for (let i =0; i< str1.length; i++) {
+ if (str1[i] !== str2[i]) {
+ count++
+ }
 }
 
-moveBox();
+// returns the count variable, which represents the number of differences between the two strings.
+return count
+}
 ```
 </details>
 	
----
-### Problem #19 My Levenshtein<a name="problem19"></a>
-Write a function that retuns a value that represents hos similat two gicen strings are.
-	
-Example 01:	
-```js
-Input: "GGACTGA" && "GGACTGA"
-Output: 
-Return Value: 0
-```
 
-Example 02:
-```js
-Input: "ACCAGGG" && "ACTATGG"
-Output: 
-Return Value: 2
-```
 	
