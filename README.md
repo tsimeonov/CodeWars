@@ -608,24 +608,24 @@ Return Value: 2
 <details>
   <summary>Solution</summary>
  
-````js
+```javascript
 function my_levenshtein (str1, str2) {
-// If the two strings are not the same length returns -1.
-if (str1.length !== str2.length) {
- return -1
-}
+    // If the two strings are not the same length returns -1.
+    if (str1.length !== str2.length) {
+        return -1
+    }
 
-// Otherwise, it initializes a count variable to 0 and iterates through each character of the two strings using a for loop. 
-// If the characters at the same position in the two strings are different, the count variable is incremented by 1
-let count = 0;
-for (let i =0; i< str1.length; i++) {
- if (str1[i] !== str2[i]) {
-  count++
- }
-}
+    // Otherwise, it initializes a count variable to 0 and iterates through each character of the two strings using a for loop. 
+    // If the characters at the same position in the two strings are different, the count variable is incremented by 1
+    let count = 0;
+    for (let i =0; i< str1.length; i++) {
+        if (str1[i] !== str2[i]) {
+            count++
+        }
+    }
 
-// returns the count variable, which represents the number of differences between the two strings.
-return count
+    // returns the count variable, which represents the number of differences between the two strings.
+    return count
 }
 ```
 </details>
