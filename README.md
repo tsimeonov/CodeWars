@@ -21,6 +21,7 @@
 | JavaScript    | 8 kyu         |   17  |[Contamination #1-String](#problem17)||
 | JavaScript    |               |   18  |[Moving box Realtime](#problem18)||
 | JavaScript    |               |   19  |[My Levenshtein](#problem19)||
+| JavaScript    | 8 kyu         |   20  |[Remove every other element](#problem20)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
@@ -630,6 +631,28 @@ function my_levenshtein (str1, str2) {
 ```
 </details>
 
+---
+### Problem #12 Remove every other element<a name="problem20"></a>
+Take an array and remove every other element
+
+```js
+["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> 
+["Keep", "Keep", "Keep", ...]
+```
+
+<details>
+  <summary>Solution</summary>
+ 
+```javascript
+function removeEveryOther(arr){
+  let result = []
+  for (let i = 0; i < arr.length; i += 2) {
+    result.push(arr[i])
+  }
+  return result
+}
+```
+</details>
 
 	
 
