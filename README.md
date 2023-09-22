@@ -22,6 +22,7 @@
 | JavaScript    |               |   18  |[Moving box Realtime](#problem18)||
 | JavaScript    |               |   19  |[My Levenshtein](#problem19)||
 | JavaScript    | 8 kyu         |   20  |[Remove every other element](#problem20)||
+| JavaScript    | 7 kyu         |   21  |[Unlucky Days](#problem21)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
@@ -632,7 +633,8 @@ function my_levenshtein (str1, str2) {
 </details>
 
 ---
-### Problem #12 Remove every other element<a name="problem20"></a>
+
+### Problem #20 Remove every other element<a name="problem20"></a>
 Take an array and remove every other element
 
 ```js
@@ -651,6 +653,44 @@ function removeEveryOther(arr){
   }
   return result
 }
+```
+</details>
+
+---
+
+### Problem #21 Unlucky Days<a name="problem21"></a>
+Friday 13th or Black Friday is considered as unlucky day. Calculate how many unlucky days are in the given year.
+
+Find the number of Friday 13th in the given year.
+
+```js
+unluckyDays(2015) == 3
+unluckyDays(1986) == 1
+```
+
+<details>
+  <summary>Solution</summary>
+ 
+```javascript
+function unluckyDays(year) {
+  // Initialize a counter for unlucky days
+  let unluckyCount = 0;
+
+  // Iterate through all months of the given year
+  for (let month = 0; month < 12; month++) {
+    // Create a date object for the 13th day of the month
+    const date = new Date(year, month, 13);
+
+    // Check if the 13th day is a Friday (getDay() returns 5 for Friday)
+    if (date.getDay() === 5) {
+      unluckyCount++;
+    }
+  }
+  return unluckyCount;
+}
+
+console.log(unluckyDays(2015));	// 3
+console.log(unluckyDays(1986));	// 1
 ```
 </details>
 
