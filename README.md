@@ -23,6 +23,7 @@
 | JavaScript    |               |   19  |[My Levenshtein](#problem19)||
 | JavaScript    | 8 kyu         |   20  |[Remove every other element](#problem20)||
 | JavaScript    | 7 kyu         |   21  |[Unlucky Days](#problem21)||
+| JavaScript    | 7 kyu         |   22  |[Spin Around, Touch the Ground](#problem22)||
 
 ---
 ### Problem #1  Even or Odd<a name="problem1"></a>
